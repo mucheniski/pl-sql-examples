@@ -43,3 +43,9 @@ Quando a parte executável (seção BEGIN) de um bloco emite um comando SQL, o P
 
 Parametros do Cursor
 ![](/img/AtributosDoCursor.png)
+
+Operadores
+![](/img/Operadores.png)
+
+Regras de Precedência
+![](/img/RegraDePrecedencia.png)
