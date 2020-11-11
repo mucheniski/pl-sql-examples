@@ -1,5 +1,7 @@
 # pl-sql-examples
 
+https://www.udemy.com/course/oracle-plsql-especialista-do-basico-ao-avancado-completo/
+
 Convensões de codificação Oracle.
 ![](/img/ConvensoesDeCodificacaoOracle.png)
 
