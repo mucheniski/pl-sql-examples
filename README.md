@@ -54,3 +54,5 @@ Regras de Precedência
 
 Regras de comparação com IF.
 Qualquer comparação que possui o valor nulo, retorna NULL como se fosse false, para comparar valor nulo usamos NVL, ou IS NULL ou IS NOT NULL.
+
+Uma variáve RECORD é uma estrutura de campos na memório, como por exemplo endereço que tem rua varchar2, numero varchar2, cidade varchar2, etc...
