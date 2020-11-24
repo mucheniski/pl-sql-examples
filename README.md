@@ -56,3 +56,8 @@ Qualquer comparação que possui o valor nulo, retorna NULL como se fosse false,
 Uma variáve RECORD é uma estrutura de campos na memória, como por exemplo endereço que tem rua varchar2, numero varchar2, cidade varchar2, etc...
 
 A diferença de sintaxe entre Nested Table e Associative Array é o INDEX BY, quando tem o INDEX BY é um Associative Array, quando não tem é uma Nested Table.
+
+Métodos de Collections
+![](/img/MetodosDeCollections.png)
+
+![](/img/MetodosDeCollections2.png)
