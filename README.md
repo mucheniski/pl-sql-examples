@@ -1,5 +1,32 @@
 # pl-sql-examples
 
+Criar o container
+docker login // faz o login no dockerhub
+docker run -d -it --name oracledatabase -p 1521:1521 -p 5500:5500 store/oracle/database-enterprise:12.2.0.1
+The default password to connect to the database with sys user is Oradoc_db1
+
+
+tnsnames.ora
+
+oracledatabasecontainer =
+    (
+        DESCRIPTION=(
+            ADDRESS=
+                (PROTOCOL=TCP)
+                (HOST=localhost)
+                (PORT=1521)
+        )
+        (
+            CONNECT_DATA=
+                (SERVER=DEDICATED)
+                (SERVICE_NAME=ORCLCDB.localdomain)
+        )
+    )
+
+SET SERVEROUTPUT ON -- Habilita o dbms_output
+SET VERIFY OFF -- Não imprime o bloco ou procedure, apenas o que está no output
+
+
 https://www.udemy.com/course/oracle-plsql-especialista-do-basico-ao-avancado-completo/
 
 Convensões de codificação Oracle.
