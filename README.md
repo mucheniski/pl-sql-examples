@@ -61,3 +61,14 @@ Métodos de Collections
 ![](/img/MetodosDeCollections.png)
 
 ![](/img/MetodosDeCollections2.png)
+
+Tipos de Cursor
+![](/img/TiposCursores.png)
+Utilize cursores explicitos para individualmente processar cada linha retonrada por um comando SELECT multi-row.
+A ordem de execução é: Abrir o cursor, Processar as linhas com o fetch, Fechar o cursor com close.
+
+Controlando cursor explícito.
+![](/img/ControlandoCursorExplicito.png)
+
+Atributos de cursor explícito.
+![](/img/AtributosDeCursorExplicito.png)
