@@ -72,3 +72,8 @@ Controlando cursor explícito.
 
 Atributos de cursor explícito.
 ![](/img/AtributosDeCursorExplicito.png)
+
+for update: Quando usando em um select, as linhas retornadas ficam em lock, ou seja, ninguém pode editar, são voltam ao estado de unloked quando a sessão for encerrada.
+O objetivo é bloquear os dados por exemplo quando deve ser feito um cálculo e ninguém pode utilizar as linhas do cursor.
+Deve ser usado com cuidado, caso o cursor com for update retorne muitas linhas vai travar todos os dados, deve ser usado com cursores pequenos.
+O ideal é usar com WHERE CURRENT OF, assim só vai tratar a linha corrente do cursor.
