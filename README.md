@@ -77,3 +77,15 @@ for update: Quando usando em um select, as linhas retornadas ficam em lock, ou s
 O objetivo é bloquear os dados por exemplo quando deve ser feito um cálculo e ninguém pode utilizar as linhas do cursor.
 Deve ser usado com cuidado, caso o cursor com for update retorne muitas linhas vai travar todos os dados, deve ser usado com cursores pequenos.
 O ideal é usar com WHERE CURRENT OF, assim só vai tratar a linha corrente do cursor.
+
+Tratamento de exceções: Se a exceção não for tratada no bloco PL/SQL ela é propagada até o fim do programa, no caso pode estourar no programa que fez a chamada dela, como no caso um programa Java.
+O ideal é que seja tratada no bloco mesmo.
+![](/img/TratamentoExcecao.png)
+
+Exceções pré-definidas Oracle
+![](/img/ExcecoesPreDefinidasOracle.png)
+![](/img/ExcecoesPreDefinidasOracle2.png)
+![](/img/ExcecoesPreDefinidasOracle3.png)
+
+RAISE_APPLICATION_ERROR: Caso queira parar o processamento na tratativa de exceção pode ser usada essa procedure Oracle
+possui 3 parametros (numero, string, boolean) o número é o código e precisa estar no intervalo -20000. -20999, a string é o texto do erro, o boolean se dor true coloca o erro na pilha de erros prévios, se for false(default) o erro sobrepõe outros erros.
